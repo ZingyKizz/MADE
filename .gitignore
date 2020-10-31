@@ -1,4 +1,7 @@
-#geo-services files
+# Jupyter cache files
+cache/
+
+# Homework data
 HW[12]_data/
 
 # .idea from pycharm
