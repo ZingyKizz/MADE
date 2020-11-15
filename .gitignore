@@ -1,7 +1,19 @@
+# zip files
+*.zip
+
+# bin files
+*.bin
+
+# txt files
+*.txt
+
+# csv files
+*.csv
+
 # Jupyter cache files
 cache/
 
-# Homework data
+# Geo Services homework data
 HW[12]_data/
 
 # .idea from pycharm
