@@ -70,12 +70,60 @@ class BinaryNode:
         self.value = value
         self.left = None
         self.right = None
+        self.height = 0
 
 
-class BinarySearchTree:
+class AVLTree:
     """Бинарное дерево поиска"""
     def __init__(self) -> None:
         self.root = None
+
+    @staticmethod
+    def _height(node: Optional["BinaryNode"]) -> int:
+        res = -1 if node is None else node.height
+        return res
+
+    @staticmethod
+    def _new_height(node: "BinaryNode") -> int:
+        res = max(AVLTree._height(node.left), AVLTree._height(node.right)) + 1
+        return res
+
+    @staticmethod
+    def _balance(node: "BinaryNode") -> int:
+        res = AVLTree._height(node.right) - AVLTree._height(node.left)
+        return res
+
+    @staticmethod
+    def _small_right_rotation(node: "BinaryNode") -> "BinaryNode":
+        if node.left is not None:
+            oth_node, node.left = node.left, node.left.right
+            oth_node.right = node
+            node.height = AVLTree._new_height(node)
+            oth_node.height = max(AVLTree._height(oth_node.left), node.height) + 1
+            return oth_node
+        return node
+
+    @staticmethod
+    def _small_left_rotation(node: "BinaryNode") -> "BinaryNode":
+        if node.right is not None:
+            oth_node, node.right = node.right, node.right.left
+            oth_node.left = node
+            node.height = AVLTree._new_height(node)
+            oth_node.height = max(AVLTree._height(node.right), node.height) + 1
+            return oth_node
+        return node
+
+    @staticmethod
+    def _big_left_rotation(node: "BinaryNode") -> "BinaryNode":
+        node.right = AVLTree._small_right_rotation(node.right)
+        oth_node = AVLTree._small_left_rotation(node)
+        return oth_node
+
+    @staticmethod
+    def _big_right_rotation(node: "BinaryNode") -> "BinaryNode":
+        node.left = AVLTree._small_left_rotation(node.left)
+        oth_node = AVLTree._small_right_rotation(node)
+        return oth_node
 
     @staticmethod
     def _insert(node: Optional["BinaryNode"], value: int) -> "BinaryNode":
@@ -83,9 +131,20 @@ class BinarySearchTree:
         if node is None:
             node = BinaryNode(value)
         elif node.value < value:
-            node.right = BinarySearchTree._insert(node.right, value)
+            node.right = AVLTree._insert(node.right, value)
+            if AVLTree._balance(node) == 2:
+                if node.right.value < value:
+                    node = AVLTree._small_left_rotation(node)
+                else:
+                    node = AVLTree._big_left_rotation(node)
         elif node.value > value:
-            node.left = BinarySearchTree._insert(node.left, value)
+            node.left = AVLTree._insert(node.left, value)
+            if AVLTree._balance(node) == -2:
+                if node.left.value > value:
+                    node = AVLTree._small_right_rotation(node)
+                else:
+                    node = AVLTree._big_right_rotation(node)
+        node.height = AVLTree._new_height(node)
         return node
 
     @staticmethod
@@ -95,10 +154,36 @@ class BinarySearchTree:
             return None
         elif node.left is None:
             return node
-        return BinarySearchTree._min(node.left)
+        return AVLTree._min(node.left)
 
     @staticmethod
-    def _prev(node: Optional["BinaryNode"], value) -> Union[int, str]:
+    def _delete(node: Optional["BinaryNode"], value: int) -> Optional["BinaryNode"]:
+        if node is None:
+            return None
+        elif node.value > value:
+            node.left = AVLTree._delete(node.left, value)
+        elif node.value < value:
+            node.right = AVLTree._delete(node.right, value)
+        elif node.left is not None and node.right is not None:
+            tmp = AVLTree._min(node.right)
+            node.value = tmp.value
+            node.right = AVLTree._delete(node.right, node.value)
+        else:
+            if node.left is None:
+                node = node.right
+            elif node.right is None:
+                node = node.left
+        if node is None:
+            return None
+        node.height = AVLTree._new_height(node)
+        if AVLTree._balance(node) == 2:
+            if AVLTree._balance(node.right) == 1:
+                return AVLTree._small_left_rotation(node)
+            return AVLTree._big_left_rotation(node)
+        return node
+
+    @staticmethod
+    def _prev(node: Optional["BinaryNode"], value: int) -> Union[str, int]:
         """Поиск максимального значения, меньше данного"""
         cur = node
         prev_ = "none"
@@ -111,7 +196,7 @@ class BinarySearchTree:
         return prev_
 
     @staticmethod
-    def _next(node: Optional["BinaryNode"], value) -> Union[int, str]:
+    def _next(node: Optional["BinaryNode"], value) -> Union[str, int]:
         """Поиск минимального значения, больше данного"""
         cur = node
         next_ = "none"
@@ -124,34 +209,14 @@ class BinarySearchTree:
         return next_
 
     @staticmethod
-    def _delete(node: Optional["BinaryNode"], value: int) -> Optional["BinaryNode"]:
-        """Удаление значения"""
-        if node is None:
-            return None
-        elif value < node.value:
-            node.left = BinarySearchTree._delete(node.left, value)
-        elif value > node.value:
-            node.right = BinarySearchTree._delete(node.right, value)
-        elif node.left is not None and node.right is not None:
-            tmp = BinarySearchTree._min(node.right)
-            node.value = tmp.value
-            node.right = BinarySearchTree._delete(node.right, node.value)
-        else:
-            if node.left is None:
-                node = node.right
-            elif node.right is None:
-                node = node.left
-        return node
-
-    @staticmethod
     def _exists(node: Optional["BinaryNode"], value: int) -> str:
         """Поиск значения"""
         if node is None:
             return "false"
         elif value < node.value:
-            return BinarySearchTree._exists(node.left, value)
+            return AVLTree._exists(node.left, value)
         elif value > node.value:
-            return BinarySearchTree._exists(node.right, value)
+            return AVLTree._exists(node.right, value)
         return "true"
 
     def insert(self, value: int) -> None:
@@ -176,7 +241,7 @@ class BinarySearchTree:
 
 
 def main() -> None:
-    bst = BinarySearchTree()
+    bst = AVLTree()
     for operation in stdin:
         act, val_ = operation.split()
         val = int(val_)
@@ -197,3 +262,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
