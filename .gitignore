@@ -1,4 +1,5 @@
-
+# graph files
+*.gexf
 
 # xml files
 *.xml
