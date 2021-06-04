@@ -1,3 +1,6 @@
+# w2vec
+*.vec
+
 # graph files
 *.gexf 
 *.gml
