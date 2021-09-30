@@ -12,7 +12,3 @@ hadoop fs -setrep -w 1 /NewLocation/file.txt
 hadoop fs -setrep -w 3 /NewLocation/file.txt
 hdfs fsck /NewLocation/file.txt
 hdfs fsck -blockId blk_1073741968
-
-
-
-
