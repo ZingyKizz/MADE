@@ -19,6 +19,7 @@
 
 # txt files
 *.txt
+!hdfs_commands.txt
 
 # csv files
 *.csv
