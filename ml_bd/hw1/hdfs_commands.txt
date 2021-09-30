@@ -1,0 +1,18 @@
+hadoop fs -mkdir /Directory
+hadoop fs -mkdir /Directory/Directory2
+hadoop fs -touchz /Directory/Directory2/EmptyFile.txt
+hadoop fs -rm -skipTrash /Directory/Directory2/EmptyFile.txt
+hadoop fs -rm -R -skipTrash /Directory
+hadoop fs -put file.txt /
+hadoop fs -tail /file.txt
+hadoop fs -cat /file.txt | head -n 5
+hadoop fs -mkdir /NewLocation
+hadoop fs -cp /file.txt /NewLocation
+hadoop fs -setrep -w 1 /NewLocation/file.txt
+hadoop fs -setrep -w 3 /NewLocation/file.txt
+hdfs fsck /NewLocation/file.txt
+hdfs fsck -blockId blk_1073741968
+
+
+
+
