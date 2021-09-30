@@ -1,0 +1,2 @@
+Numpy Mean: 152.7206871868289, Numpy Variance: 57672.84569843359
+MapReduce Mean: 152.7206871868289, MapReduce Variance: 57672.84569843356
