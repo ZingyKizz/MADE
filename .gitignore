@@ -20,6 +20,7 @@
 # txt files
 *.txt
 !hdfs_commands.txt
+!calculation_result.txt
 
 # csv files
 *.csv
