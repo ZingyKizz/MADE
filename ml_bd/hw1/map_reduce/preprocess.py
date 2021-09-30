@@ -31,14 +31,14 @@ def write_prices(
 
 
 def write_statistics(
-    prices: np.ndarray, result_output_path=RESULT_OUTPUT_PATH, encoding=DEFAULT_ENCODING
+    prices: np.ndarray, result_output_path: str = RESULT_OUTPUT_PATH, encoding: str = DEFAULT_ENCODING
 ) -> NoReturn:
     """Запись статистик в результирующий файл, посчитанных через numpy"""
     mean = np.mean(prices)
     variance = np.var(prices)
 
     with open(result_output_path, encoding=encoding, mode="w") as f:
-        f.write(f"Numpy Mean: {mean}, Numpy Variance: {variance}")
+        f.write(f"Numpy Mean: {mean}, Numpy Variance: {variance}{DEFAULT_SEPARATOR}")
 
 
 def main() -> NoReturn:
