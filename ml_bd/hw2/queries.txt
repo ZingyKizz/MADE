@@ -1,0 +1,95 @@
+# Исполнитель с максимальным числом скробблов
+
+select
+    artist_lastfm,
+    scrobbles_lastfm
+from
+    artists
+order by
+    scrobbles_lastfm desc
+limit 1;
+
+> The Beatles 517126240
+
+# Самый популярный тэг на ластфм
+
+select
+    tag,
+    count(*) as cnt
+from
+    artists
+    lateral view explode(split(tags_lastfm, ";")) t as tag
+where
+    trim(tag) <> ""
+group by
+    tag
+order by
+   cnt desc
+limit 1;
+
+> seen live	81394
+
+# Самые популярные исполнители 10 самых популярных тегов ластфм (вывел топ 10)
+
+with top_tags as (
+    select
+        tag,
+        count(*) as cnt
+    from
+        artists
+        lateral view explode(split(tags_lastfm, ";")) t as tag
+    where
+        trim(tag) <> ""
+    group by
+        tag
+    order by
+        cnt desc
+    limit 10
+), artists_with_tags as (
+    select
+        artist_lastfm,
+        scrobbles_lastfm,
+        tag
+    from
+        artists
+        lateral view explode(split(tags_lastfm, ";")) t as tag
+)
+select
+    artists_with_tags.artist_lastfm,
+    max(artists_with_tags.scrobbles_lastfm) as max_scrobbles
+from
+    artists_with_tags
+    left semi join top_tags on (
+        artists_with_tags.tag = top_tags.tag
+    )
+group by
+    artists_with_tags.artist_lastfm
+order by
+    max_scrobbles desc
+limit 10;
+
+> The Beatles	517126240
+  Radiohead	499548800
+  Coldplay	360111840
+  Muse	344838624
+  Arctic Monkeys 332306560
+  Pink Floyd 313236128
+  Linkin Park 294986496
+  Red Hot Chili Peppers	293784032
+  Lady Gaga	285469632
+  Metallica	281172224
+
+# Любой другой инсайт на ваше усмотрение. Страна с наибольшим количество исполнителей
+
+select
+    country_lastfm,
+    count(*) as cnt
+from
+    artists
+group by
+    country_lastfm
+order by
+    cnt desc
+limit 1;
+
+> United States 25016
