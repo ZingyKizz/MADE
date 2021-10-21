@@ -97,3 +97,7 @@ docs/_build/
 target/
 /ml_bd/hw2/EDA.ipynb
 !/ml_bd/hw2/queries.txt
+
+# Scala
+
+.bsp/
