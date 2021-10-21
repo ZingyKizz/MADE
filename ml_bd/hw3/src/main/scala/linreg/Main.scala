@@ -2,7 +2,6 @@ package linreg
 
 import breeze.linalg.{csvread, csvwrite}
 import com.typesafe.scalalogging.Logger
-
 import java.io.{File, FileInputStream, PrintWriter}
 import play.api.libs.json.Json
 
