@@ -8,7 +8,7 @@ case class TrainParams(learningRate: Double, epochs: Int)
 
 case class ValParams(shuffle: Boolean, valSize: Double)
 
-case class OutputDataPaths(yTestPredPath: String)
+case class OutputDataPaths(yTestPredPath: String, valScorePath: String)
 
 case class InputFile(inputDataPaths: InputDataPaths, trainParams: TrainParams,
                      valParams: ValParams, outputDataPaths: OutputDataPaths)
