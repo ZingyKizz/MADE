@@ -1,0 +1,18 @@
+{
+  "inputDataPaths": {
+    "xTrainPath": "src/main/resources/data/raw/X_train.csv",
+    "yTrainPath": "src/main/resources/data/raw/y_train.csv",
+    "xTestPath": "src/main/resources/data/raw/X_test.csv"
+  },
+  "trainParams": {
+    "learningRate": 0.3,
+    "epochs": 3
+  },
+  "valParams": {
+    "shuffle": true,
+    "valSize": 0.15
+  },
+  "outputDataPaths": {
+    "yTestPredPath": "src/main/resources/data/res/y_pred.csv"
+  }
+}
