@@ -101,3 +101,4 @@ target/
 # Scala
 
 .bsp/
+!/ml_bd/hw3/src/main/resources/data
