@@ -13,6 +13,7 @@
     "valSize": 0.15
   },
   "outputDataPaths": {
-    "yTestPredPath": "src/main/resources/data/res/y_pred.csv"
+    "yTestPredPath": "src/main/resources/data/res/y_pred.csv",
+    "valScorePath": "src/main/resources/data/res/val_score.txt"
   }
 }
