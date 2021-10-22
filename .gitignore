@@ -101,7 +101,3 @@ target/
 # Scala
 
 .bsp/
-!/ml_bd/hw3/src/main/resources/data/raw/X_train.csv
-!/ml_bd/hw3/src/main/resources/data/raw/y_train.csv
-!/ml_bd/hw3/src/main/resources/data/raw/X_test.csv
-!/ml_bd/hw3/src/main/resources/data/res/y_pred.csv
