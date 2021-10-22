@@ -11,10 +11,10 @@ case class TrainUtils() {
     sum(pow(yTrue - yPred, 2)) / yTrue.length
   }
 
-  def trainValSplit(X: DenseMatrix[Double], y: DenseVector[Double], shuffle: Boolean, valSize: Double): (
+  def trainValSplit(x: DenseMatrix[Double], y: DenseVector[Double], shuffle: Boolean, valSize: Double): (
     DenseMatrix[Double], DenseMatrix[Double], DenseVector[Double], DenseVector[Double]
     ) = {
-    require(X.rows == y.length, "Dimensions disagree")
+    require(x.rows == y.length, "Dimensions disagree")
 
     val splitIdx = (valSize * y.length).toInt
 
@@ -28,11 +28,11 @@ case class TrainUtils() {
     val idxTrainCollection = idxCollection.slice(0, splitIdx).toIndexedSeq
     val idxValCollection = idxCollection.slice(splitIdx + 1, y.length).toIndexedSeq
 
-    val XTrain = X(idxTrainCollection, ::).toDenseMatrix
+    val xTrain = x(idxTrainCollection, ::).toDenseMatrix
     val yTrain = y(idxTrainCollection).toDenseVector
-    val XVal = X(idxValCollection, ::).toDenseMatrix
+    val xVal = x(idxValCollection, ::).toDenseMatrix
     val yVal = y(idxValCollection).toDenseVector
 
-    (XTrain, XVal, yTrain, yVal)
+    (xTrain, xVal, yTrain, yVal)
   }
 }
