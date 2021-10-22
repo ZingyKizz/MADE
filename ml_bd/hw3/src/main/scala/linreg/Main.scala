@@ -40,8 +40,8 @@ object Main extends App {
     pw.close()
 
     logger.debug("Making predictions...")
-    val yTestPred = linearRegression.predict(xTest).toDenseMatrix
+    val yTestPred = linearRegression.predict(xTest)
 
     logger.debug("Writing Predictions...")
-    csvwrite(new File(cfgData.outputDataPaths.yTestPredPath), yTestPred)
+    csvwrite(new File(cfgData.outputDataPaths.yTestPredPath), yTestPred.toDenseMatrix)
 }
