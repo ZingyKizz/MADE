@@ -1,0 +1,1318 @@
+﻿{
+ "paragraphs": [
+  {
+   "user": "anonymous",
+   "progress": 0,
+   "config": {
+    "tableHide": false,
+    "editorSetting": {
+     "language": "markdown",
+     "editOnDblClick": true,
+     "completionKey": "TAB",
+     "completionSupport": false
+    },
+    "colWidth": 12,
+    "editorMode": "ace/mode/markdown",
+    "fontSize": 9,
+    "editorHide": false,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1635776825581_104761779",
+   "id": "paragraph_1635776825581_104761779",
+   "dateCreated": "2021-11-01T14:27:05+0000",
+   "status": "FINISHED",
+   "focus": true,
+   "$$hashKey": "object:8420",
+   "text": "%md\n\n# Imports",
+   "dateUpdated": "2021-11-01T14:52:14+0000",
+   "dateFinished": "2021-11-01T14:52:14+0000",
+   "dateStarted": "2021-11-01T14:52:14+0000",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "HTML",
+      "data": "<div class=\"markdown-body\">\n<h1>Imports</h1>\n\n</div>"
+     }
+    ]
+   }
+  },
+  {
+   "user": "anonymous",
+   "progress": 0,
+   "config": {
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
+    },
+    "colWidth": 12,
+    "editorMode": "ace/mode/scala",
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1635767612504_519364494",
+   "id": "paragraph_1635767612504_519364494",
+   "dateCreated": "2021-11-01T11:53:32+0000",
+   "status": "FINISHED",
+   "focus": true,
+   "$$hashKey": "object:773",
+   "text": "import org.apache.spark.sql._\nimport org.apache.spark.sql.{functions => F}\nimport spark.implicits._",
+   "dateUpdated": "2021-11-01T14:52:14+0000",
+   "dateFinished": "2021-11-01T14:52:14+0000",
+   "dateStarted": "2021-11-01T14:52:14+0000",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "import org.apache.spark.sql._\nimport org.apache.spark.sql.{functions=>F}\nimport spark.implicits._\n"
+     }
+    ]
+   }
+  },
+  {
+   "user": "anonymous",
+   "progress": 0,
+   "config": {
+    "tableHide": false,
+    "editorSetting": {
+     "language": "markdown",
+     "editOnDblClick": true,
+     "completionKey": "TAB",
+     "completionSupport": false
+    },
+    "colWidth": 12,
+    "editorMode": "ace/mode/markdown",
+    "fontSize": 9,
+    "editorHide": true,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1635776874221_853757832",
+   "id": "paragraph_1635776874221_853757832",
+   "dateCreated": "2021-11-01T14:27:54+0000",
+   "status": "FINISHED",
+   "focus": true,
+   "$$hashKey": "object:8612",
+   "text": "%md\n\n# Constants",
+   "dateUpdated": "2021-11-01T14:52:15+0000",
+   "dateFinished": "2021-11-01T14:52:15+0000",
+   "dateStarted": "2021-11-01T14:52:15+0000",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "HTML",
+      "data": "<div class=\"markdown-body\">\n<h1>Constants</h1>\n\n</div>"
+     }
+    ]
+   }
+  },
+  {
+   "text": "val appName = \"MADE_hw4\"\nval topN = 100\nval inputPath = \"tripadvisor_hotel_reviews.csv\"\nval outputPath = \"tfidf.csv\"",
+   "user": "anonymous",
+   "dateUpdated": "2021-11-01T14:52:15+0000",
+   "progress": 0,
+   "config": {
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
+    },
+    "colWidth": 12,
+    "editorMode": "ace/mode/scala",
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "\u001b[1m\u001b[34mappName\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m = MADE_hw4\n\u001b[1m\u001b[34mtopN\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m = 100\n\u001b[1m\u001b[34minputPath\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m = tripadvisor_hotel_reviews.csv\n\u001b[1m\u001b[34moutputPath\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m = tfidf.csv\n"
+     }
+    ]
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1635766094885_1402976338",
+   "id": "paragraph_1635766094885_1402976338",
+   "dateCreated": "2021-11-01T11:28:14+0000",
+   "dateStarted": "2021-11-01T14:52:15+0000",
+   "dateFinished": "2021-11-01T14:52:15+0000",
+   "status": "FINISHED",
+   "focus": true,
+   "$$hashKey": "object:105"
+  },
+  {
+   "user": "anonymous",
+   "progress": 0,
+   "config": {
+    "tableHide": false,
+    "editorSetting": {
+     "language": "markdown",
+     "editOnDblClick": true,
+     "completionKey": "TAB",
+     "completionSupport": false
+    },
+    "colWidth": 12,
+    "editorMode": "ace/mode/markdown",
+    "fontSize": 9,
+    "editorHide": true,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1635776912518_1138387496",
+   "id": "paragraph_1635776912518_1138387496",
+   "dateCreated": "2021-11-01T14:28:32+0000",
+   "status": "FINISHED",
+   "focus": true,
+   "$$hashKey": "object:8699",
+   "text": "%md\n\n# Loading Data",
+   "dateUpdated": "2021-11-01T14:52:15+0000",
+   "dateFinished": "2021-11-01T14:52:15+0000",
+   "dateStarted": "2021-11-01T14:52:15+0000",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "HTML",
+      "data": "<div class=\"markdown-body\">\n<h1>Loading Data</h1>\n\n</div>"
+     }
+    ]
+   }
+  },
+  {
+   "user": "anonymous",
+   "progress": 0,
+   "config": {
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
+    },
+    "colWidth": 12,
+    "editorMode": "ace/mode/scala",
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1635767469871_1246583529",
+   "id": "paragraph_1635767469871_1246583529",
+   "dateCreated": "2021-11-01T11:51:09+0000",
+   "status": "FINISHED",
+   "focus": true,
+   "$$hashKey": "object:688",
+   "text": "val spark = (\n    SparkSession.builder\n    .master(\"local[*]\")\n    .appName(appName)\n    .getOrCreate\n)",
+   "dateUpdated": "2021-11-01T14:52:15+0000",
+   "dateFinished": "2021-11-01T14:52:15+0000",
+   "dateStarted": "2021-11-01T14:52:15+0000",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "\u001b[1m\u001b[34mspark\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.SparkSession\u001b[0m = org.apache.spark.sql.SparkSession@63e16fbc\n"
+     }
+    ]
+   }
+  },
+  {
+   "text": "val reviews = (\n    spark.read.option(\"header\", true).csv(inputPath)\n    .withColumn(\"Id\", F.monotonically_increasing_id)\n    .cache\n)\n\nval numReviews = reviews.count",
+   "user": "anonymous",
+   "dateUpdated": "2021-11-01T14:52:15+0000",
+   "progress": 0,
+   "config": {
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
+    },
+    "colWidth": 12,
+    "editorMode": "ace/mode/scala",
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "\u001b[1m\u001b[34mreviews\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Dataset[org.apache.spark.sql.Row]\u001b[0m = [Review: string, Rating: string ... 1 more field]\n\u001b[1m\u001b[34mnumReviews\u001b[0m: \u001b[1m\u001b[32mLong\u001b[0m = 20491\n"
+     }
+    ]
+   },
+   "apps": [],
+   "runtimeInfos": {
+    "jobUrl": {
+     "propertyName": "jobUrl",
+     "label": "SPARK JOB",
+     "tooltip": "View in Spark web UI",
+     "group": "spark",
+     "values": [
+      {
+       "jobUrl": "http://c8937d3298c9:4040/jobs/job?id=37",
+       "$$hashKey": "object:12442"
+      },
+      {
+       "jobUrl": "http://c8937d3298c9:4040/jobs/job?id=38",
+       "$$hashKey": "object:12443"
+      }
+     ],
+     "interpreterSettingId": "spark"
+    }
+   },
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1635766097907_1059945951",
+   "id": "paragraph_1635766097907_1059945951",
+   "dateCreated": "2021-11-01T11:28:17+0000",
+   "dateStarted": "2021-11-01T14:52:15+0000",
+   "dateFinished": "2021-11-01T14:52:16+0000",
+   "status": "FINISHED",
+   "$$hashKey": "object:106"
+  },
+  {
+   "user": "anonymous",
+   "progress": 0,
+   "config": {
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
+    },
+    "colWidth": 12,
+    "editorMode": "ace/mode/scala",
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {
+    "jobUrl": {
+     "propertyName": "jobUrl",
+     "label": "SPARK JOB",
+     "tooltip": "View in Spark web UI",
+     "group": "spark",
+     "values": [
+      {
+       "jobUrl": "http://c8937d3298c9:4040/jobs/job?id=39",
+       "$$hashKey": "object:12481"
+      }
+     ],
+     "interpreterSettingId": "spark"
+    }
+   },
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1635766229932_256289414",
+   "id": "paragraph_1635766229932_256289414",
+   "dateCreated": "2021-11-01T11:30:29+0000",
+   "status": "FINISHED",
+   "$$hashKey": "object:107",
+   "text": "reviews.show",
+   "dateUpdated": "2021-11-01T14:52:16+0000",
+   "dateFinished": "2021-11-01T14:52:16+0000",
+   "dateStarted": "2021-11-01T14:52:16+0000",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "+--------------------+------+---+\n|              Review|Rating| Id|\n+--------------------+------+---+\n|nice hotel expens...|     4|  0|\n|ok nothing specia...|     2|  1|\n|nice rooms not 4*...|     3|  2|\n|unique, great sta...|     5|  3|\n|great stay great ...|     5|  4|\n|love monaco staff...|     5|  5|\n|cozy stay rainy c...|     5|  6|\n|excellent staff, ...|     4|  7|\n|hotel stayed hote...|     5|  8|\n|excellent stayed ...|     5|  9|\n|poor value stayed...|     2| 10|\n|nice value seattl...|     4| 11|\n|nice hotel good l...|     4| 12|\n|nice hotel not ni...|     3| 13|\n|great hotel night...|     4| 14|\n|horrible customer...|     1| 15|\n|disappointed say ...|     2| 16|\n|fantastic stay mo...|     5| 17|\n|good choice hotel...|     5| 18|\n|hmmmmm say really...|     3| 19|\n+--------------------+------+---+\nonly showing top 20 rows\n\n"
+     }
+    ]
+   }
+  },
+  {
+   "user": "anonymous",
+   "progress": 0,
+   "config": {
+    "tableHide": false,
+    "editorSetting": {
+     "language": "markdown",
+     "editOnDblClick": true,
+     "completionKey": "TAB",
+     "completionSupport": false
+    },
+    "colWidth": 12,
+    "editorMode": "ace/mode/markdown",
+    "fontSize": 9,
+    "editorHide": true,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1635776946280_629912369",
+   "id": "paragraph_1635776946280_629912369",
+   "dateCreated": "2021-11-01T14:29:06+0000",
+   "status": "FINISHED",
+   "focus": true,
+   "$$hashKey": "object:8802",
+   "text": "%md\n\n# Preprocessing",
+   "dateUpdated": "2021-11-01T14:52:16+0000",
+   "dateFinished": "2021-11-01T14:52:16+0000",
+   "dateStarted": "2021-11-01T14:52:16+0000",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "HTML",
+      "data": "<div class=\"markdown-body\">\n<h1>Preprocessing</h1>\n\n</div>"
+     }
+    ]
+   }
+  },
+  {
+   "user": "anonymous",
+   "progress": 0,
+   "config": {
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
+    },
+    "colWidth": 12,
+    "editorMode": "ace/mode/scala",
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1635768024890_800501021",
+   "id": "paragraph_1635768024890_800501021",
+   "dateCreated": "2021-11-01T12:00:24+0000",
+   "status": "FINISHED",
+   "focus": true,
+   "$$hashKey": "object:1323",
+   "text": "val parsedTokens = reviews.select(\n    F.col(\"Id\"), \n    F.explode(\n        F.split(\n            F.lower(\n                F.trim(\n                    F.regexp_replace(F.col(\"Review\"), pattern=\"[^A-Za-z0-9- ]\", replacement=\"\")\n                )\n            ),\n            pattern=\" \"\n        )\n    ).alias(\"Token\")\n).cache",
+   "dateUpdated": "2021-11-01T14:52:16+0000",
+   "dateFinished": "2021-11-01T14:52:16+0000",
+   "dateStarted": "2021-11-01T14:52:16+0000",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "\u001b[1m\u001b[34mparsedTokens\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Dataset[org.apache.spark.sql.Row]\u001b[0m = [Id: bigint, Token: string]\n"
+     }
+    ]
+   }
+  },
+  {
+   "user": "anonymous",
+   "progress": 0,
+   "config": {
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
+    },
+    "colWidth": 12,
+    "editorMode": "ace/mode/scala",
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {
+    "jobUrl": {
+     "propertyName": "jobUrl",
+     "label": "SPARK JOB",
+     "tooltip": "View in Spark web UI",
+     "group": "spark",
+     "values": [
+      {
+       "jobUrl": "http://c8937d3298c9:4040/jobs/job?id=40",
+       "$$hashKey": "object:12551"
+      }
+     ],
+     "interpreterSettingId": "spark"
+    }
+   },
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1635770316140_459394645",
+   "id": "paragraph_1635770316140_459394645",
+   "dateCreated": "2021-11-01T12:38:36+0000",
+   "status": "FINISHED",
+   "focus": true,
+   "$$hashKey": "object:1617",
+   "text": "parsedTokens.show",
+   "dateUpdated": "2021-11-01T14:52:16+0000",
+   "dateFinished": "2021-11-01T14:52:16+0000",
+   "dateStarted": "2021-11-01T14:52:16+0000",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "+---+-----------+\n| Id|      Token|\n+---+-----------+\n|  0|       nice|\n|  0|      hotel|\n|  0|  expensive|\n|  0|    parking|\n|  0|        got|\n|  0|       good|\n|  0|       deal|\n|  0|       stay|\n|  0|      hotel|\n|  0|anniversary|\n|  0|    arrived|\n|  0|       late|\n|  0|    evening|\n|  0|       took|\n|  0|     advice|\n|  0|   previous|\n|  0|    reviews|\n|  0|        did|\n|  0|      valet|\n|  0|    parking|\n+---+-----------+\nonly showing top 20 rows\n\n"
+     }
+    ]
+   }
+  },
+  {
+   "user": "anonymous",
+   "progress": 0,
+   "config": {
+    "tableHide": false,
+    "editorSetting": {
+     "language": "markdown",
+     "editOnDblClick": true,
+     "completionKey": "TAB",
+     "completionSupport": false
+    },
+    "colWidth": 12,
+    "editorMode": "ace/mode/markdown",
+    "fontSize": 9,
+    "editorHide": true,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1635776971970_594154503",
+   "id": "paragraph_1635776971970_594154503",
+   "dateCreated": "2021-11-01T14:29:31+0000",
+   "status": "FINISHED",
+   "focus": true,
+   "$$hashKey": "object:8889",
+   "text": "%md\n# Calculating TF",
+   "dateUpdated": "2021-11-01T14:52:16+0000",
+   "dateFinished": "2021-11-01T14:52:16+0000",
+   "dateStarted": "2021-11-01T14:52:16+0000",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "HTML",
+      "data": "<div class=\"markdown-body\">\n<h1>Calculating TF</h1>\n\n</div>"
+     }
+    ]
+   }
+  },
+  {
+   "user": "anonymous",
+   "progress": 0,
+   "config": {
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
+    },
+    "colWidth": 12,
+    "editorMode": "ace/mode/scala",
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1635772383056_2001782723",
+   "id": "paragraph_1635772383056_2001782723",
+   "dateCreated": "2021-11-01T13:13:03+0000",
+   "status": "FINISHED",
+   "focus": true,
+   "$$hashKey": "object:2749",
+   "text": "val tf = (\n    parsedTokens.groupBy(\"Id\", \"Token\")\n    .agg(F.count(F.lit(1)).alias(\"tf\"))\n    .cache\n)",
+   "dateUpdated": "2021-11-01T14:52:16+0000",
+   "dateFinished": "2021-11-01T14:52:17+0000",
+   "dateStarted": "2021-11-01T14:52:16+0000",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "\u001b[1m\u001b[34mtf\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Dataset[org.apache.spark.sql.Row]\u001b[0m = [Id: bigint, Token: string ... 1 more field]\n"
+     }
+    ]
+   }
+  },
+  {
+   "user": "anonymous",
+   "progress": 0,
+   "config": {
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
+    },
+    "colWidth": 12,
+    "editorMode": "ace/mode/scala",
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {
+    "jobUrl": {
+     "propertyName": "jobUrl",
+     "label": "SPARK JOB",
+     "tooltip": "View in Spark web UI",
+     "group": "spark",
+     "values": [
+      {
+       "jobUrl": "http://c8937d3298c9:4040/jobs/job?id=41",
+       "$$hashKey": "object:12621"
+      }
+     ],
+     "interpreterSettingId": "spark"
+    }
+   },
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1635772440020_768367842",
+   "id": "paragraph_1635772440020_768367842",
+   "dateCreated": "2021-11-01T13:14:00+0000",
+   "status": "FINISHED",
+   "focus": true,
+   "$$hashKey": "object:2878",
+   "text": "tf.show",
+   "dateUpdated": "2021-11-01T14:52:17+0000",
+   "dateFinished": "2021-11-01T14:52:17+0000",
+   "dateStarted": "2021-11-01T14:52:17+0000",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "+---+----------+---+\n| Id|     Token| tf|\n+---+----------+---+\n|  0|      room|  3|\n|  1|    better|  2|\n|  6|attractive|  1|\n|  6|  positive|  1|\n|  7| concierge|  2|\n| 10|        nt|  2|\n| 12|     clean|  1|\n| 12|   concert|  1|\n| 15|      stay|  2|\n| 16|      desk|  6|\n| 19|       bed|  1|\n| 30| excellent|  1|\n| 32|    really|  1|\n| 44| cringeshe|  1|\n| 46|      mind|  1|\n| 51|    pretty|  1|\n| 52|     steer|  1|\n| 54|     tacky|  1|\n| 58|   staying|  1|\n| 63|       etc|  1|\n+---+----------+---+\nonly showing top 20 rows\n\n"
+     }
+    ]
+   }
+  },
+  {
+   "user": "anonymous",
+   "progress": 0,
+   "config": {
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
+    },
+    "colWidth": 12,
+    "editorMode": "ace/mode/scala",
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1635772630400_2109465424",
+   "id": "paragraph_1635772630400_2109465424",
+   "dateCreated": "2021-11-01T13:17:10+0000",
+   "status": "FINISHED",
+   "focus": true,
+   "$$hashKey": "object:3084",
+   "text": "val df = (\n    parsedTokens.groupBy(\"Token\")\n    .agg(F.countDistinct(\"Id\").alias(\"Df\"))\n    .cache\n)",
+   "dateUpdated": "2021-11-01T14:52:17+0000",
+   "dateFinished": "2021-11-01T14:52:17+0000",
+   "dateStarted": "2021-11-01T14:52:17+0000",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "\u001b[1m\u001b[34mdf\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Dataset[org.apache.spark.sql.Row]\u001b[0m = [Token: string, Df: bigint]\n"
+     }
+    ]
+   }
+  },
+  {
+   "user": "anonymous",
+   "progress": 0,
+   "config": {
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
+    },
+    "colWidth": 12,
+    "editorMode": "ace/mode/scala",
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {
+    "jobUrl": {
+     "propertyName": "jobUrl",
+     "label": "SPARK JOB",
+     "tooltip": "View in Spark web UI",
+     "group": "spark",
+     "values": [
+      {
+       "jobUrl": "http://c8937d3298c9:4040/jobs/job?id=42",
+       "$$hashKey": "object:12679"
+      }
+     ],
+     "interpreterSettingId": "spark"
+    }
+   },
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1635772921825_1170438387",
+   "id": "paragraph_1635772921825_1170438387",
+   "dateCreated": "2021-11-01T13:22:01+0000",
+   "status": "FINISHED",
+   "focus": true,
+   "$$hashKey": "object:3373",
+   "text": "df.show",
+   "dateUpdated": "2021-11-01T14:52:17+0000",
+   "dateFinished": "2021-11-01T14:52:17+0000",
+   "dateStarted": "2021-11-01T14:52:17+0000",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "+-----------+----+\n|      Token|  Df|\n+-----------+----+\n|     travel|1330|\n|   priority|  75|\n|        art| 311|\n|       hope| 540|\n|      pools| 818|\n| strawberry|  27|\n| lifeguards|  19|\n|        fog|  16|\n|     waters|  97|\n|         07|  47|\n|     harder|  52|\n|    barrier| 163|\n|   everyday| 513|\n|    familia|  62|\n|     online| 317|\n|  standards| 575|\n|  traveling| 436|\n|  connected| 154|\n|transaction|  13|\n|handicapped|  24|\n+-----------+----+\nonly showing top 20 rows\n\n"
+     }
+    ]
+   }
+  },
+  {
+   "user": "anonymous",
+   "progress": 0,
+   "config": {
+    "tableHide": false,
+    "editorSetting": {
+     "language": "markdown",
+     "editOnDblClick": true,
+     "completionKey": "TAB",
+     "completionSupport": false
+    },
+    "colWidth": 12,
+    "editorMode": "ace/mode/markdown",
+    "fontSize": 9,
+    "editorHide": true,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1635776999365_237392794",
+   "id": "paragraph_1635776999365_237392794",
+   "dateCreated": "2021-11-01T14:29:59+0000",
+   "status": "FINISHED",
+   "focus": true,
+   "$$hashKey": "object:8976",
+   "text": "%md \n\n# Calculating IDF",
+   "dateUpdated": "2021-11-01T14:52:17+0000",
+   "dateFinished": "2021-11-01T14:52:17+0000",
+   "dateStarted": "2021-11-01T14:52:17+0000",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "HTML",
+      "data": "<div class=\"markdown-body\">\n<h1>Calculating IDF</h1>\n\n</div>"
+     }
+    ]
+   }
+  },
+  {
+   "user": "anonymous",
+   "progress": 0,
+   "config": {
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
+    },
+    "colWidth": 12,
+    "editorMode": "ace/mode/scala",
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1635772935404_574076198",
+   "id": "paragraph_1635772935404_574076198",
+   "dateCreated": "2021-11-01T13:22:15+0000",
+   "status": "FINISHED",
+   "focus": true,
+   "$$hashKey": "object:3491",
+   "text": "val idf = (\n    df.orderBy(F.desc(\"Df\"))\n    .limit(topN)\n    .withColumn(\"Idf\", F.log(F.lit(numReviews) / F.col(\"Df\")))\n    .select(\"Token\", \"Idf\")\n)",
+   "dateUpdated": "2021-11-01T14:52:17+0000",
+   "dateFinished": "2021-11-01T14:52:18+0000",
+   "dateStarted": "2021-11-01T14:52:17+0000",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "\u001b[1m\u001b[34midf\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Token: string, Idf: double]\n"
+     }
+    ]
+   }
+  },
+  {
+   "user": "anonymous",
+   "progress": 0,
+   "config": {
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
+    },
+    "colWidth": 12,
+    "editorMode": "ace/mode/scala",
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {
+    "jobUrl": {
+     "propertyName": "jobUrl",
+     "label": "SPARK JOB",
+     "tooltip": "View in Spark web UI",
+     "group": "spark",
+     "values": [
+      {
+       "jobUrl": "http://c8937d3298c9:4040/jobs/job?id=43",
+       "$$hashKey": "object:12741"
+      }
+     ],
+     "interpreterSettingId": "spark"
+    }
+   },
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1635773990878_1059355879",
+   "id": "paragraph_1635773990878_1059355879",
+   "dateCreated": "2021-11-01T13:39:50+0000",
+   "status": "FINISHED",
+   "focus": true,
+   "$$hashKey": "object:4010",
+   "text": "idf.show",
+   "dateUpdated": "2021-11-01T14:52:18+0000",
+   "dateFinished": "2021-11-01T14:52:18+0000",
+   "dateStarted": "2021-11-01T14:52:18+0000",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "+---------+-------------------+\n|    Token|                Idf|\n+---------+-------------------+\n|    hotel|0.22796213047630678|\n|     room| 0.3774345464851811|\n|      not| 0.5248812905902491|\n|    staff| 0.5761615606679251|\n|    great| 0.6207277851003891|\n|     stay| 0.7086391666920769|\n|     good| 0.7932023857769316|\n|   stayed| 0.8741714483105988|\n|       nt| 0.8942571897235461|\n|    rooms| 0.9003624340420276|\n| location| 0.9218451462423751|\n|     just| 0.9741010072037023|\n|    clean| 0.9863264163299872|\n|     nice|  1.016615660626155|\n|      did| 1.0453493380409857|\n|breakfast| 1.0596093308337993|\n|       no|  1.101740498853866|\n|    night| 1.1753176404712384|\n|  service|   1.19189436687925|\n|     time| 1.2033710951284642|\n+---------+-------------------+\nonly showing top 20 rows\n\n"
+     }
+    ]
+   }
+  },
+  {
+   "user": "anonymous",
+   "progress": 0,
+   "config": {
+    "tableHide": false,
+    "editorSetting": {
+     "language": "markdown",
+     "editOnDblClick": true,
+     "completionKey": "TAB",
+     "completionSupport": false
+    },
+    "colWidth": 12,
+    "editorMode": "ace/mode/markdown",
+    "fontSize": 9,
+    "editorHide": true,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1635777030848_1697028124",
+   "id": "paragraph_1635777030848_1697028124",
+   "dateCreated": "2021-11-01T14:30:30+0000",
+   "status": "FINISHED",
+   "focus": true,
+   "$$hashKey": "object:9086",
+   "text": "%md\n\n# Calculating TFIDF",
+   "dateUpdated": "2021-11-01T14:52:18+0000",
+   "dateFinished": "2021-11-01T14:52:18+0000",
+   "dateStarted": "2021-11-01T14:52:18+0000",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "HTML",
+      "data": "<div class=\"markdown-body\">\n<h1>Calculating TFIDF</h1>\n\n</div>"
+     }
+    ]
+   }
+  },
+  {
+   "user": "anonymous",
+   "progress": 0,
+   "config": {
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
+    },
+    "colWidth": 12,
+    "editorMode": "ace/mode/scala",
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1635774087621_672959308",
+   "id": "paragraph_1635774087621_672959308",
+   "dateCreated": "2021-11-01T13:41:27+0000",
+   "status": "FINISHED",
+   "focus": true,
+   "$$hashKey": "object:4176",
+   "text": "val tfIdfUnfilled = (\n    reviews.select(\"Id\")\n    .distinct\n    .crossJoin(idf.select(\"Token\"))\n    .cache\n)",
+   "dateUpdated": "2021-11-01T14:52:18+0000",
+   "dateFinished": "2021-11-01T14:52:18+0000",
+   "dateStarted": "2021-11-01T14:52:18+0000",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "\u001b[1m\u001b[34mtfIdfUnfilled\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Dataset[org.apache.spark.sql.Row]\u001b[0m = [Id: bigint, Token: string]\n"
+     }
+    ]
+   }
+  },
+  {
+   "user": "anonymous",
+   "progress": 0,
+   "config": {
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
+    },
+    "colWidth": 12,
+    "editorMode": "ace/mode/scala",
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {
+    "jobUrl": {
+     "propertyName": "jobUrl",
+     "label": "SPARK JOB",
+     "tooltip": "View in Spark web UI",
+     "group": "spark",
+     "values": [
+      {
+       "jobUrl": "http://c8937d3298c9:4040/jobs/job?id=44",
+       "$$hashKey": "object:12811"
+      }
+     ],
+     "interpreterSettingId": "spark"
+    }
+   },
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1635774919094_1867802936",
+   "id": "paragraph_1635774919094_1867802936",
+   "dateCreated": "2021-11-01T13:55:19+0000",
+   "status": "FINISHED",
+   "focus": true,
+   "$$hashKey": "object:4754",
+   "text": "tfIdfUnfilled.show",
+   "dateUpdated": "2021-11-01T14:52:18+0000",
+   "dateFinished": "2021-11-01T14:52:19+0000",
+   "dateStarted": "2021-11-01T14:52:18+0000",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "+---+---------+\n| Id|    Token|\n+---+---------+\n| 26|    hotel|\n| 26|     room|\n| 26|      not|\n| 26|    staff|\n| 26|    great|\n| 26|     stay|\n| 26|     good|\n| 26|   stayed|\n| 26|       nt|\n| 26|    rooms|\n| 26| location|\n| 26|     just|\n| 26|    clean|\n| 26|     nice|\n| 26|      did|\n| 26|breakfast|\n| 26|       no|\n| 26|    night|\n| 26|  service|\n| 26|     time|\n+---+---------+\nonly showing top 20 rows\n\n"
+     }
+    ]
+   }
+  },
+  {
+   "user": "anonymous",
+   "progress": 0,
+   "config": {
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
+    },
+    "colWidth": 12,
+    "editorMode": "ace/mode/scala",
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {
+    "jobUrl": {
+     "propertyName": "jobUrl",
+     "label": "SPARK JOB",
+     "tooltip": "View in Spark web UI",
+     "group": "spark",
+     "values": [
+      {
+       "jobUrl": "http://c8937d3298c9:4040/jobs/job?id=45",
+       "$$hashKey": "object:12855"
+      },
+      {
+       "jobUrl": "http://c8937d3298c9:4040/jobs/job?id=46",
+       "$$hashKey": "object:12856"
+      }
+     ],
+     "interpreterSettingId": "spark"
+    }
+   },
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1635775462143_169174155",
+   "id": "paragraph_1635775462143_169174155",
+   "dateCreated": "2021-11-01T14:04:22+0000",
+   "status": "FINISHED",
+   "focus": true,
+   "$$hashKey": "object:5939",
+   "text": "val tfIdf = (\n    tfIdfUnfilled.join(\n        tf.join(idf, Seq(\"Token\")).withColumn(\n            \"tfIdf\", F.col(\"Tf\") * F.col(\"Idf\")\n        ).select(\"Id\", \"Token\", \"tfIdf\"),\n        Seq(\"Id\", \"Token\"),\n        \"left\"\n    )\n    .na.fill(0)\n    .groupBy(\"Id\")\n    .pivot(\"Token\")\n    .agg(F.first(F.col(\"TfIdf\")))\n    .cache\n)",
+   "dateUpdated": "2021-11-01T14:52:19+0000",
+   "dateFinished": "2021-11-01T14:52:28+0000",
+   "dateStarted": "2021-11-01T14:52:19+0000",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "\u001b[1m\u001b[34mtfIdf\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Dataset[org.apache.spark.sql.Row]\u001b[0m = [Id: bigint, 2: double ... 99 more fields]\n"
+     }
+    ]
+   }
+  },
+  {
+   "user": "anonymous",
+   "progress": 0,
+   "config": {
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
+    },
+    "colWidth": 12,
+    "editorMode": "ace/mode/scala",
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {
+    "jobUrl": {
+     "propertyName": "jobUrl",
+     "label": "SPARK JOB",
+     "tooltip": "View in Spark web UI",
+     "group": "spark",
+     "values": [
+      {
+       "jobUrl": "http://c8937d3298c9:4040/jobs/job?id=47",
+       "$$hashKey": "object:12894"
+      }
+     ],
+     "interpreterSettingId": "spark"
+    }
+   },
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1635775624134_632441098",
+   "id": "paragraph_1635775624134_632441098",
+   "dateCreated": "2021-11-01T14:07:04+0000",
+   "status": "FINISHED",
+   "focus": true,
+   "$$hashKey": "object:6134",
+   "text": "tfIdf.show",
+   "dateUpdated": "2021-11-01T14:52:28+0000",
+   "dateFinished": "2021-11-01T14:52:28+0000",
+   "dateStarted": "2021-11-01T14:52:28+0000",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "TEXT",
+      "data": "+----------+------------------+-----------------+------------------+-----------------+------------------+------------------+-----------------+------------------+-----------------+------------------+------------------+------------------+-----------------+----------------+------------------+------------------+------------------+-----------------+------------------+-----------------+------------------+------------------+-----------------+------------------+------------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+-------------------+-----------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------+-----------------+------------------+------------------+------------------+----------------+------------------+------------------+------------------+------------------+-----------------+------------------+-----------------+-----------------+------------------+-----------------+------------------+------------------+------------------+------------------+------------------+-----------------+----------------+------------------+------------------+------------------+------------------+------------------+-----------------+-----------------+------------------+-----------------+----+------------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+-----------------+\n|        Id|                 2|                3|                 4|                5|              area|           arrived|             away|               bar|         bathroom|             beach|         beautiful|               bed|             beds|            best|            better|               big|               bit|           booked|         breakfast|           buffet|              city|             clean|            close|       comfortable|               day|             days|       definitely|             desk|               did|         excellent|        experience|         fantastic|             floor|              food|              free|          friendly|             going|              good|               got|             great|           helpful|              hotel|           hotels|              just|             large|              like|            little|             lobby|          location|             loved|            lovely|              make|          minutes|          morning|             need|              new|             nice|             night|nights|               no|               not|                nt|            people|         perfect|             place|              pool|             price|           problem|            quiet|             quite|           really|        recommend|            resort|       restaurant|       restaurants|           reviews|             right|              room|             rooms|              say|         service|            shower|             small|             staff|              stay|            stayed|           street|            think|              time|            times|took|              trip|             view|             walk|          walking|              want|             water|               way|              went|        wonderful|\n+----------+------------------+-----------------+------------------+-----------------+------------------+------------------+-----------------+------------------+-----------------+------------------+------------------+------------------+-----------------+----------------+------------------+------------------+------------------+-----------------+------------------+-----------------+------------------+------------------+-----------------+------------------+------------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+-------------------+-----------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------+-----------------+------------------+------------------+------------------+----------------+------------------+------------------+------------------+------------------+-----------------+------------------+-----------------+-----------------+------------------+-----------------+------------------+------------------+------------------+------------------+------------------+-----------------+----------------+------------------+------------------+------------------+------------------+------------------+-----------------+-----------------+------------------+-----------------+----+------------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+-----------------+\n|        26|               0.0|              0.0|               0.0|              0.0|               0.0|               0.0|              0.0|               0.0|1.572596304874994|               0.0|               0.0|               0.0|              0.0|             0.0|               0.0|               0.0|               0.0|              0.0|               0.0|              0.0|               0.0|0.9863264163299872|              0.0|               0.0|               0.0|2.020457434910485|              0.0|              0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0| 2.514966954387517|2.0691003887160413|               0.0|               0.0|               0.0|               0.0|0.22796213047630678|              0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|2.0945370956957747|               0.0|               0.0|              0.0|              0.0|              0.0|              0.0|              0.0|               0.0|   0.0|              0.0|               0.0|               0.0|               0.0|             0.0|               0.0|               0.0|               0.0|               0.0|              0.0|               0.0|1.434635648449685|              0.0|               0.0|              0.0|               0.0|               0.0|               0.0|0.3774345464851811|               0.0|              0.0|1.19189436687925|               0.0|               0.0|0.5761615606679251|0.7086391666920769|0.8741714483105988|              0.0|2.168553605829037|               0.0|              0.0| 0.0|               0.0|              0.0|              0.0|              0.0|               0.0|               0.0|               0.0|               0.0|3.819548681686468|\n|       474|               0.0|              0.0|               0.0|              0.0|               0.0|               0.0|              0.0|               0.0|              0.0|               0.0|               0.0|               0.0|              0.0|             0.0|               0.0|               0.0|               0.0|1.865938769798485|1.0596093308337993|              0.0|               0.0|0.9863264163299872|              0.0|1.6765989052460815|               0.0|              0.0|              0.0|              0.0|               0.0|1.5358843442318928|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0| 1.862183355301167|               0.0|0.22796213047630678|              0.0|               0.0|               0.0|               0.0|               0.0|               0.0|0.9218451462423751|               0.0|               0.0|               0.0|              0.0|              0.0|              0.0|              0.0|              0.0|1.1753176404712384|   0.0|              0.0|               0.0|               0.0|               0.0|2.16429465560947|               0.0|               0.0|               0.0|               0.0|2.122674000078343|               0.0|              0.0|              0.0|               0.0|              0.0|1.6713932714188164|               0.0|               0.0|0.3774345464851811|0.9003624340420276|              0.0|             0.0|               0.0|               0.0|               0.0|0.7086391666920769|0.8741714483105988|              0.0|              0.0|               0.0|              0.0| 0.0|               0.0|              0.0|              0.0|              0.0|               0.0|               0.0|               0.0|               0.0|              0.0|\n|      1677|               0.0|              0.0|               0.0|              0.0| 6.392331907069749|               0.0|              0.0|1.7677943887582852|1.572596304874994|               0.0|               0.0|1.6923804005834844|              0.0|             0.0|               0.0|2.1210446718156533|               0.0|              0.0|1.0596093308337993|2.089397728779716|1.9385196355215562|0.9863264163299872|              0.0|1.6765989052460815|1.2851494435262614|              0.0|              0.0|              0.0|               0.0|               0.0|2.0488281320397004|               0.0|               0.0|               0.0|1.9005909375040573|               0.0|               0.0|0.7932023857769316|               0.0|               0.0|               0.0|  1.139810652381534|              0.0|               0.0|               0.0|               0.0|               0.0|2.0890034847375505|               0.0|               0.0|               0.0|               0.0|              0.0|              0.0|              0.0|              0.0|              0.0|               0.0|   0.0|2.203480997707732|3.1492877435414948|               0.0|               0.0|             0.0|1.3502056239144333|               0.0|               0.0|               0.0|              0.0|               0.0|              0.0|              0.0|               0.0|              0.0|               0.0|               0.0|               0.0|0.7548690929703622|0.9003624340420276|              0.0|             0.0|               0.0|1.4424514019336032|               0.0|               0.0|               0.0|              0.0|              0.0|1.2033710951284642|              0.0| 0.0|               0.0|              0.0|2.970973879170178|              0.0|1.8773565912698114|               0.0|               0.0|               0.0|              0.0|\n|      2040|               0.0|              0.0|               0.0|              0.0|1.5980829767674372|               0.0|              0.0|               0.0|              0.0|               0.0|               0.0|1.6923804005834844|              0.0|             0.0|               0.0|               0.0|               0.0|              0.0|1.0596093308337993|              0.0|               0.0|0.9863264163299872|              0.0|1.6765989052460815|               0.0|              0.0|              0.0|1.860905729919496|               0.0|               0.0| 4.097656264079401|               0.0|               0.0|               0.0|               0.0|1.2574834771937584|               0.0|               0.0|               0.0|0.6207277851003891|1.4019846222601071| 1.3677727828578408|              0.0|               0.0|               0.0|1.3471975374198333|               0.0|               0.0|0.9218451462423751|               0.0|               0.0|               0.0|2.019721599704362|              0.0|              0.0|4.109047978948182|              0.0|               0.0|   0.0|2.203480997707732|1.5746438717707474|               0.0|               0.0|2.16429465560947|1.3502056239144333|               0.0|               0.0|               0.0|              0.0|2.0308163880679677|              0.0|1.575422496110829|               0.0|              0.0|               0.0|               0.0|1.8206235735864427|0.7548690929703622|               0.0|              0.0|             0.0|               0.0|               0.0|0.5761615606679251|0.7086391666920769|0.8741714483105988|              0.0|              0.0|               0.0|              0.0| 0.0|               0.0|              0.0|              0.0|              0.0|               0.0|               0.0|               0.0|               0.0|              0.0|\n|      2214|               0.0|              0.0|               0.0|              0.0|3.1961659535348743|               0.0|              0.0|               0.0|              0.0|               0.0|               0.0|               0.0|              0.0|             0.0|               0.0|               0.0|               0.0|              0.0|2.1192186616675985|              0.0|               0.0|0.9863264163299872|              0.0|               0.0|2.5702988870525227|              0.0|              0.0|5.582717189758488|1.0453493380409857|1.5358843442318928|               0.0|               0.0|               0.0|               0.0|3.8011818750081146|               0.0|               0.0|1.5864047715538632|               0.0|               0.0|1.4019846222601071| 0.6838863914289204|              0.0|1.9482020144074046|1.9405562961033598|               0.0|               0.0|2.0890034847375505|2.7655354387271256|               0.0|               0.0|               0.0|4.039443199408724|              0.0|              0.0|              0.0|              0.0|1.1753176404712384|   0.0|2.203480997707732|               0.0|3.5770287588941843|3.2063243983999636|             0.0|               0.0|               0.0|3.8314456103555425|               0.0|              0.0|               0.0|              0.0|              0.0|               0.0|              0.0|1.6713932714188164|               0.0|3.6412471471728853|0.3774345464851811|               0.0|              0.0|1.19189436687925|               0.0|               0.0|1.1523231213358502|1.4172783333841539|               0.0|2.002583532112129|              0.0|1.2033710951284642|              0.0| 0.0|               0.0|              0.0|              0.0|              0.0|               0.0|               0.0|               0.0|               0.0|              0.0|\n|      2453|               0.0|              0.0|               0.0|              0.0|               0.0|               0.0|3.702451433569008|               0.0|              0.0|3.3190443285386526|1.7973874969055947|               0.0|              0.0|             0.0|               0.0|               0.0|               0.0|              0.0|               0.0|              0.0|               0.0|               0.0|              0.0|               0.0|               0.0|              0.0|              0.0|3.721811459838992|1.0453493380409857|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|1.2414555702007781|               0.0| 1.8236970438104543|              0.0|               0.0|               0.0|1.3471975374198333|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|              0.0|              0.0|              0.0|              0.0| 2.03323132125231|1.1753176404712384|   0.0|              0.0|0.5248812905902491|  4.47128594861773|               0.0|             0.0|               0.0|               0.0|               0.0|               0.0|2.122674000078343|               0.0|1.434635648449685|              0.0|               0.0|1.714088341306834|1.6713932714188164|               0.0|1.8206235735864427|0.3774345464851811|               0.0|              0.0| 2.3837887337585|               0.0|               0.0|0.5761615606679251|0.7086391666920769|0.8741714483105988|              0.0|2.168553605829037|1.2033710951284642|2.213509899487747| 0.0|               0.0|              0.0|              0.0|              0.0|               0.0|               0.0|               0.0|               0.0|              0.0|\n|      2509|               0.0|              0.0|               0.0|              0.0|               0.0|               0.0|1.851225716784504|               0.0|              0.0|               0.0|               0.0|               0.0|              0.0|3.14049446335654|               0.0|               0.0|               0.0|              0.0|               0.0|              0.0|               0.0|               0.0|              0.0|               0.0|               0.0|2.020457434910485|              0.0|              0.0|1.0453493380409857|               0.0|               0.0|               0.0|               0.0|               0.0|1.9005909375040573|               0.0|               0.0|               0.0|               0.0| 1.862183355301167|1.4019846222601071|0.45592426095261357|              0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|2.1962490150911482|               0.0|              0.0|              0.0|              0.0|              0.0|              0.0|               0.0|   0.0|              0.0|               0.0|0.8942571897235461|               0.0|             0.0|1.3502056239144333|               0.0|               0.0|               0.0|              0.0|               0.0|              0.0|              0.0|               0.0|1.714088341306834|               0.0|               0.0|               0.0|               0.0|0.9003624340420276|              0.0|1.19189436687925|               0.0|1.4424514019336032|               0.0| 2.125917500076231|0.8741714483105988|              0.0|              0.0|               0.0|              0.0| 0.0|               0.0|              0.0|              0.0|              0.0|1.8773565912698114|               0.0|               0.0|1.8640484100673165|              0.0|\n|      3091|               0.0|1.805073020990425|               0.0|1.820322232616858|               0.0|2.1512060161515922|              0.0|1.7677943887582852|              0.0|19.914265971231917|1.7973874969055947|               0.0|              0.0|1.57024723167827|               0.0|               0.0|               0.0|              0.0|2.1192186616675985|              0.0|               0.0|               0.0|3.997229114060066|               0.0|1.2851494435262614|              0.0|              0.0|              0.0| 5.226746690204928|1.5358843442318928|               0.0|               0.0|               0.0| 5.285022981767333|1.9005909375040573|               0.0| 6.207301166148124|0.7932023857769316| 4.781970112149758|0.6207277851003891|               0.0|0.45592426095261357|              0.0| 4.870505036018511|1.9405562961033598|2.6943950748396666|1.5374725464942618|               0.0|               0.0|2.0945370956957747|2.1962490150911482|3.7959650477920204|              0.0|              0.0| 4.30661106806775|              0.0|1.016615660626155|3.5259529214137153|   0.0|2.203480997707732| 4.199050324721993|               0.0|3.2063243983999636|             0.0|               0.0| 9.815663635728592|               0.0|2.1918707243842657|4.245348000156686|               0.0|1.434635648449685|1.575422496110829|17.984290689202894|1.714088341306834| 3.342786542837633|               0.0|               0.0|0.7548690929703622|               0.0|1.979355759224933|1.19189436687925|               0.0|1.4424514019336032|               0.0|0.7086391666920769|               0.0|              0.0|              0.0| 3.610113285385393|2.213509899487747| 0.0|3.4831101002214995|1.791515489428372|              0.0|2.077247863465692|1.8773565912698114| 5.741208148672124|1.8518474140379755| 7.456193640269266|              0.0|\n|      3506|1.6695776827992137|              0.0|               0.0|              0.0|               0.0|               0.0|              0.0|               0.0|              0.0|               0.0|               0.0|               0.0|2.209500092377517|             0.0|               0.0|               0.0|               0.0|              0.0|               0.0|              0.0|               0.0|0.9863264163299872|              0.0|1.6765989052460815|               0.0|              0.0|2.025623498060385|              0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|1.5939900373832527|               0.0|               0.0| 0.6838863914289204|              0.0|0.9741010072037023|               0.0|               0.0|               0.0|               0.0|               0.0|2.0945370956957747|               0.0|               0.0|              0.0|              0.0|              0.0|              0.0|              0.0|               0.0|   0.0|1.101740498853866|               0.0|               0.0|               0.0|             0.0|               0.0|               0.0|               0.0|               0.0|              0.0|               0.0|              0.0|1.575422496110829|               0.0|              0.0|               0.0|               0.0|               0.0|               0.0|               0.0|              0.0|1.19189436687925|               0.0|               0.0|0.5761615606679251|0.7086391666920769|               0.0|              0.0|              0.0|               0.0|              0.0| 0.0|               0.0|              0.0|              0.0|              0.0|1.8773565912698114|               0.0|               0.0|               0.0|              0.0|\n|      5385|               0.0|              0.0|               0.0|              0.0|               0.0|               0.0|              0.0|               0.0|              0.0|               0.0|               0.0|               0.0|              0.0|             0.0|               0.0|2.1210446718156533|               0.0|              0.0|               0.0|              0.0|               0.0|               0.0|              0.0|               0.0|               0.0|              0.0|2.025623498060385|              0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0| 1.862183355301167|               0.0|0.22796213047630678|              0.0|0.9741010072037023|               0.0|               0.0|               0.0|2.0890034847375505|1.8436902924847502|               0.0|               0.0|               0.0|              0.0|              0.0|              0.0|              0.0| 2.03323132125231|               0.0|   0.0|              0.0|1.0497625811804983|               0.0|               0.0|             0.0|               0.0|1.6359439392880988|               0.0|               0.0|              0.0|               0.0|              0.0|              0.0|               0.0|              0.0|               0.0|               0.0|               0.0|               0.0|0.9003624340420276|              0.0|             0.0|               0.0|1.4424514019336032|0.5761615606679251|0.7086391666920769|               0.0|4.005167064224258|              0.0|               0.0|              0.0| 0.0|               0.0|              0.0|1.485486939585089|              0.0|               0.0|               0.0|               0.0|               0.0|              0.0|\n|      5409|               0.0|              0.0|               0.0|              0.0|               0.0|               0.0|              0.0|               0.0|              0.0|               0.0|               0.0|               0.0|              0.0|             0.0|               0.0|               0.0|               0.0|              0.0|               0.0|              0.0|1.9385196355215562|0.9863264163299872|1.998614557030033|               0.0|               0.0|              0.0|              0.0|              0.0|1.0453493380409857|               0.0|               0.0|               0.0|               0.0|               0.0|1.9005909375040573|1.2574834771937584|               0.0|               0.0|               0.0|1.2414555702007781|               0.0|  1.139810652381534|              0.0|               0.0|               0.0|               0.0|               0.0|               0.0|1.8436902924847502|               0.0|               0.0|               0.0|              0.0|              0.0|              0.0|              0.0| 2.03323132125231|               0.0|   0.0|              0.0|1.0497625811804983|               0.0|               0.0|2.16429465560947|1.3502056239144333|               0.0|               0.0|               0.0|              0.0|               0.0|1.434635648449685|1.575422496110829|               0.0|1.714088341306834|1.6713932714188164|               0.0|               0.0|               0.0|               0.0|              0.0|1.19189436687925|               0.0|               0.0|0.5761615606679251|               0.0|               0.0|              0.0|              0.0|               0.0|              0.0| 0.0|1.7415550501107497|              0.0|1.485486939585089|              0.0|1.8773565912698114|               0.0|               0.0|               0.0|              0.0|\n|8589934965|               0.0|              0.0|               0.0|1.820322232616858|1.5980829767674372|2.1512060161515922|              0.0|3.5355887775165704|              0.0|3.3190443285386526|               0.0|1.6923804005834844|2.209500092377517|3.14049446335654|               0.0|2.1210446718156533|               0.0|              0.0|               0.0|2.089397728779716|               0.0|               0.0|              0.0|1.6765989052460815|1.2851494435262614|              0.0|              0.0|              0.0|1.0453493380409857|               0.0|               0.0|2.1741174977770865|1.7856777612326866|1.3212557454418332|1.9005909375040573|               0.0|2.0691003887160413| 4.759214314661589|3.1879800747665055|0.6207277851003891|               0.0|0.22796213047630678|              0.0|1.9482020144074046|               0.0| 6.735987687099167|               0.0|               0.0|               0.0|               0.0|               0.0|1.8979825238960102|              0.0|              0.0|              0.0|              0.0|              0.0|               0.0|   0.0|1.101740498853866|1.5746438717707474|1.7885143794470921|3.2063243983999636|             0.0|2.7004112478288667|3.2718878785761976|1.9157228051777713|               0.0|              0.0|2.0308163880679677|              0.0|              0.0|1.9982545210225435|1.714088341306834|1.6713932714188164|3.7868682159946885|               0.0|1.1323036394555432|0.9003624340420276|3.958711518449866|             0.0|               0.0|               0.0|               0.0|0.7086391666920769|               0.0|              0.0|2.168553605829037|               0.0|              0.0| 0.0|1.7415550501107497|3.583030978856744|              0.0|              0.0|1.8773565912698114| 5.741208148672124|               0.0|               0.0|              0.0|\n|8589935298|               0.0|              0.0|               0.0|              0.0|               0.0|               0.0|              0.0|               0.0|              0.0|               0.0|               0.0|               0.0|              0.0|             0.0|               0.0|2.1210446718156533|               0.0|              0.0|               0.0|              0.0|               0.0|               0.0|              0.0|               0.0|               0.0|              0.0|2.025623498060385|              0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|1.9005909375040573|1.2574834771937584|               0.0|               0.0|               0.0|1.2414555702007781|               0.0|0.22796213047630678|              0.0|               0.0|               0.0|               0.0|               0.0|               0.0|0.9218451462423751|               0.0|               0.0|               0.0|              0.0|2.071034251240992|              0.0|              0.0|              0.0|               0.0|   0.0|              0.0|               0.0|               0.0|               0.0|             0.0|1.3502056239144333|               0.0|               0.0|               0.0|              0.0|               0.0|              0.0|              0.0|               0.0|              0.0|               0.0|               0.0|               0.0|               0.0|0.9003624340420276|              0.0|             0.0|               0.0|               0.0|0.5761615606679251|1.4172783333841539|               0.0|              0.0|              0.0|               0.0|              0.0| 0.0|               0.0|              0.0|              0.0|              0.0|               0.0|               0.0|               0.0|               0.0|1.909774340843234|\n|8589935768|               0.0|1.805073020990425|2.0633211393422672|5.460966697850574|               0.0|               0.0|              0.0|1.7677943887582852|              0.0| 8.297610821346632|               0.0|               0.0|2.209500092377517|1.57024723167827|  5.53416337549651|4.2420893436313065|1.9351343919366228|              0.0|               0.0|6.268193186339149|               0.0|0.9863264163299872|1.998614557030033|               0.0| 3.855448330578784|2.020457434910485|              0.0|              0.0| 5.226746690204928|               0.0|               0.0|               0.0|               0.0|2.6425114908836664|               0.0|               0.0| 4.138200777432083|2.3796071573307946|1.5939900373832527|1.2414555702007781|               0.0|0.45592426095261357|7.370249185049184| 6.818707050425916|1.9405562961033598| 9.430382761938834|3.0749450929885236|               0.0|               0.0|               0.0|               0.0|1.8979825238960102|              0.0|2.071034251240992|2.153305534033875|2.054523989474091|1.016615660626155| 2.350635280942477|   0.0| 5.50870249426933| 4.723931615312242| 9.836829086959007|1.6031621991999818|6.49288396682841|2.7004112478288667| 6.543775757152395| 5.747168415533314|               0.0|              0.0|               0.0|4.303906945349055|              0.0|               0.0|1.714088341306834|               0.0|               0.0|               0.0|0.3774345464851811|0.9003624340420276|1.979355759224933|             0.0|               0.0|1.4424514019336032|               0.0|               0.0|               0.0|4.005167064224258|2.168553605829037|2.4067421902569284|2.213509899487747| 0.0|3.4831101002214995|              0.0|4.456460818755267|              0.0| 5.632069773809434|1.9137360495573745|               0.0|1.8640484100673165|              0.0|\n|8589935936|1.6695776827992137| 3.61014604198085|2.0633211393422672|1.820322232616858|1.5980829767674372|               0.0|              0.0|3.5355887775165704|              0.0| 9.957132985615958|               0.0|1.6923804005834844|              0.0|1.57024723167827|1.8447211251655031|               0.0|3.8702687838732457|1.865938769798485|1.0596093308337993|2.089397728779716|               0.0|2.9589792489899613|              0.0| 3.353197810492163|2.5702988870525227|              0.0|              0.0|1.860905729919496|1.0453493380409857|1.5358843442318928|2.0488281320397004|2.1741174977770865|1.7856777612326866|1.3212557454418332|1.9005909375040573|1.2574834771937584|               0.0| 4.759214314661589|               0.0| 5.586550065903501|               0.0|0.22796213047630678|              0.0|               0.0|               0.0|               0.0|               0.0|2.0890034847375505|0.9218451462423751|2.0945370956957747|               0.0|1.8979825238960102|              0.0|2.071034251240992|2.153305534033875|              0.0|7.116309624383085|3.5259529214137153|   0.0|1.101740498853866|               0.0|1.7885143794470921|               0.0|             0.0|               0.0| 8.179719696440493|               0.0|               0.0|2.122674000078343|               0.0|              0.0|1.575422496110829| 7.993018084090174|1.714088341306834| 5.014179814256449|               0.0|               0.0|1.5097381859407244|               0.0|              0.0|  4.767577467517|               0.0|               0.0|0.5761615606679251|               0.0|0.8741714483105988|              0.0|              0.0| 3.610113285385393|2.213509899487747| 0.0|               0.0|              0.0|              0.0|              0.0|               0.0| 3.827472099114749|1.8518474140379755| 3.728096820134633|              0.0|\n|8589936424|               0.0|              0.0|               0.0|              0.0|               0.0|2.1512060161515922|1.851225716784504|               0.0|              0.0|               0.0|               0.0|               0.0|2.209500092377517|             0.0|               0.0|               0.0|1.9351343919366228|              0.0|2.1192186616675985|              0.0|               0.0|               0.0|              0.0|1.6765989052460815|1.2851494435262614|              0.0|              0.0|              0.0|1.0453493380409857|               0.0|               0.0|               0.0|               0.0|               0.0|1.9005909375040573|               0.0|               0.0|0.7932023857769316|               0.0|               0.0|               0.0|                0.0|1.842562296262296|0.9741010072037023|               0.0|2.6943950748396666|               0.0|               0.0|0.9218451462423751|               0.0|               0.0|               0.0|              0.0|              0.0|              0.0|              0.0|              0.0|               0.0|   0.0|              0.0|1.5746438717707474|1.7885143794470921|               0.0|             0.0|               0.0|1.6359439392880988|               0.0|               0.0|              0.0|               0.0|              0.0|              0.0|               0.0|              0.0|               0.0|               0.0|               0.0|               0.0|0.9003624340420276|              0.0|             0.0|               0.0|               0.0|               0.0|               0.0|1.7483428966211976|              0.0|              0.0|               0.0|2.213509899487747| 0.0|               0.0|              0.0|              0.0|              0.0|               0.0|               0.0|               0.0|               0.0|              0.0|\n|8589936761|               0.0|              0.0|               0.0|              0.0|1.5980829767674372|               0.0|              0.0|               0.0|              0.0|               0.0|               0.0|               0.0|              0.0|             0.0|               0.0|               0.0|               0.0|              0.0|               0.0|              0.0|               0.0|               0.0|              0.0|               0.0|               0.0|              0.0|              0.0|              0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|0.6207277851003891|               0.0|  1.139810652381534|              0.0|0.9741010072037023|               0.0|               0.0|               0.0|2.0890034847375505|0.9218451462423751|               0.0|               0.0|               0.0|              0.0|              0.0|              0.0|              0.0|              0.0|1.1753176404712384|   0.0|2.203480997707732|0.5248812905902491|1.7885143794470921|               0.0|             0.0|               0.0|               0.0|               0.0|               0.0|4.245348000156686|               0.0|1.434635648449685|              0.0|               0.0|              0.0|               0.0|               0.0|               0.0|               0.0|0.9003624340420276|              0.0|             0.0|               0.0|               0.0|               0.0|0.7086391666920769|0.8741714483105988|              0.0|              0.0|               0.0|              0.0| 0.0|               0.0|              0.0|              0.0|              0.0|               0.0|               0.0|               0.0|               0.0|              0.0|\n|8589936870|1.6695776827992137|1.805073020990425|               0.0|              0.0|3.1961659535348743|               0.0|              0.0|               0.0|              0.0|               0.0|1.7973874969055947|               0.0|              0.0|1.57024723167827|               0.0|               0.0|1.9351343919366228|              0.0|               0.0|              0.0|               0.0|0.9863264163299872|              0.0|               0.0|               0.0|              0.0|              0.0|              0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0| 1.3677727828578408|              0.0|               0.0|1.9405562961033598|               0.0|               0.0|2.0890034847375505|0.9218451462423751|               0.0|2.1962490150911482|               0.0|2.019721599704362|2.071034251240992|              0.0|              0.0|3.049846981878465|               0.0|   0.0|1.101740498853866|1.0497625811804983|               0.0|1.6031621991999818|             0.0|               0.0|               0.0|               0.0|               0.0|              0.0| 4.061632776135935|              0.0|              0.0|               0.0|              0.0|               0.0|               0.0|               0.0|1.1323036394555432|               0.0|              0.0|             0.0| 4.386364399964153|               0.0|1.1523231213358502|               0.0|               0.0|              0.0|              0.0|               0.0|              0.0| 0.0|               0.0|              0.0|              0.0|              0.0|               0.0|               0.0|               0.0|               0.0|              0.0|\n|8589937263|               0.0|              0.0|               0.0|              0.0|               0.0|               0.0|              0.0|               0.0|1.572596304874994|               0.0|               0.0|               0.0|              0.0|             0.0|1.8447211251655031|               0.0|               0.0|              0.0|1.0596093308337993|              0.0|               0.0|               0.0|              0.0|               0.0|               0.0|              0.0|              0.0|              0.0|               0.0|1.5358843442318928|               0.0|               0.0|               0.0|               0.0|               0.0|1.2574834771937584|               0.0|               0.0|               0.0|               0.0|               0.0|0.45592426095261357|              0.0|0.9741010072037023|               0.0|               0.0|               0.0|               0.0|0.9218451462423751|               0.0|               0.0|               0.0|              0.0|              0.0|              0.0|              0.0|              0.0|1.1753176404712384|   0.0|              0.0|0.5248812905902491|               0.0|               0.0|             0.0|               0.0|               0.0|               0.0|               0.0|2.122674000078343|               0.0|              0.0|              0.0|               0.0|              0.0|               0.0|               0.0|               0.0|1.1323036394555432|               0.0|              0.0|1.19189436687925|               0.0|1.4424514019336032|0.5761615606679251|               0.0|0.8741714483105988|              0.0|              0.0|               0.0|              0.0| 0.0|               0.0|              0.0|              0.0|              0.0|               0.0|               0.0|               0.0|               0.0|              0.0|\n|8589937582|               0.0|              0.0|               0.0|3.640644465233716|               0.0|               0.0|              0.0|               0.0|              0.0|               0.0|               0.0|               0.0|              0.0|             0.0|               0.0|               0.0|               0.0|              0.0|1.0596093308337993|              0.0|               0.0|0.9863264163299872|              0.0|               0.0|1.2851494435262614|              0.0|              0.0|              0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|               0.0|1.5864047715538632|               0.0|1.2414555702007781|1.4019846222601071|                0.0|              0.0|               0.0|               0.0|               0.0|               0.0|               0.0|0.9218451462423751|               0.0|               0.0|               0.0|              0.0|              0.0|              0.0|              0.0|              0.0|               0.0|   0.0|2.203480997707732|0.5248812905902491|0.8942571897235461|               0.0|             0.0|               0.0|               0.0|               0.0|               0.0|              0.0|2.0308163880679677|              0.0|              0.0|               0.0|              0.0|               0.0|               0.0|               0.0|0.7548690929703622|               0.0|              0.0|1.19189436687925|2.1931821999820764|               0.0|               0.0|               0.0|               0.0|              0.0|              0.0|               0.0|              0.0| 0.0|               0.0|              0.0|1.485486939585089|              0.0|               0.0|               0.0|               0.0|               0.0|              0.0|\n+----------+------------------+-----------------+------------------+-----------------+------------------+------------------+-----------------+------------------+-----------------+------------------+------------------+------------------+-----------------+----------------+------------------+------------------+------------------+-----------------+------------------+-----------------+------------------+------------------+-----------------+------------------+------------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+-------------------+-----------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------+-----------------+------------------+------------------+------------------+----------------+------------------+------------------+------------------+------------------+-----------------+------------------+-----------------+-----------------+------------------+-----------------+------------------+------------------+------------------+------------------+------------------+-----------------+----------------+------------------+------------------+------------------+------------------+------------------+-----------------+-----------------+------------------+-----------------+----+------------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+-----------------+\nonly showing top 20 rows\n\n"
+     }
+    ]
+   }
+  },
+  {
+   "user": "anonymous",
+   "progress": 0,
+   "config": {
+    "tableHide": false,
+    "editorSetting": {
+     "language": "markdown",
+     "editOnDblClick": true,
+     "completionKey": "TAB",
+     "completionSupport": false
+    },
+    "colWidth": 12,
+    "editorMode": "ace/mode/markdown",
+    "fontSize": 9,
+    "editorHide": true,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1635776820491_222438932",
+   "id": "paragraph_1635776820491_222438932",
+   "dateCreated": "2021-11-01T14:27:00+0000",
+   "status": "FINISHED",
+   "focus": true,
+   "$$hashKey": "object:8351",
+   "text": "%md\n\n# Saving results",
+   "dateUpdated": "2021-11-01T14:52:28+0000",
+   "dateFinished": "2021-11-01T14:52:28+0000",
+   "dateStarted": "2021-11-01T14:52:28+0000",
+   "results": {
+    "code": "SUCCESS",
+    "msg": [
+     {
+      "type": "HTML",
+      "data": "<div class=\"markdown-body\">\n<h1>Saving results</h1>\n\n</div>"
+     }
+    ]
+   }
+  },
+  {
+   "user": "anonymous",
+   "progress": 0,
+   "config": {
+    "colWidth": 12,
+    "fontSize": 9,
+    "results": {},
+    "enabled": true,
+    "editorSetting": {}
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {
+    "jobUrl": {
+     "propertyName": "jobUrl",
+     "label": "SPARK JOB",
+     "tooltip": "View in Spark web UI",
+     "group": "spark",
+     "values": [
+      {
+       "jobUrl": "http://c8937d3298c9:4040/jobs/job?id=48",
+       "$$hashKey": "object:12924"
+      }
+     ],
+     "interpreterSettingId": "spark"
+    }
+   },
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1635776789965_254064963",
+   "id": "paragraph_1635776789965_254064963",
+   "dateCreated": "2021-11-01T14:26:29+0000",
+   "status": "FINISHED",
+   "focus": true,
+   "$$hashKey": "object:8229",
+   "dateUpdated": "2021-11-01T14:52:28+0000",
+   "dateFinished": "2021-11-01T14:52:29+0000",
+   "dateStarted": "2021-11-01T14:52:28+0000",
+   "results": {
+    "code": "SUCCESS",
+    "msg": []
+   },
+   "text": "tfIdf.write.mode(\"overwrite\").csv(outputPath)"
+  },
+  {
+   "user": "anonymous",
+   "progress": 0,
+   "config": {
+    "editorSetting": {
+     "language": "scala",
+     "editOnDblClick": false,
+     "completionKey": "TAB",
+     "completionSupport": true
+    },
+    "colWidth": 12,
+    "editorMode": "ace/mode/scala",
+    "fontSize": 9,
+    "results": {},
+    "enabled": true
+   },
+   "settings": {
+    "params": {},
+    "forms": {}
+   },
+   "apps": [],
+   "runtimeInfos": {},
+   "progressUpdateIntervalMs": 500,
+   "jobName": "paragraph_1635778288818_2067011447",
+   "id": "paragraph_1635778288818_2067011447",
+   "dateCreated": "2021-11-01T14:51:28+0000",
+   "status": "FINISHED",
+   "focus": true,
+   "$$hashKey": "object:11524",
+   "dateUpdated": "2021-11-01T14:52:29+0000"
+  }
+ ],
+ "name": "TfIdf",
+ "id": "2GN5D47YQ",
+ "defaultInterpreterGroup": "spark",
+ "version": "0.10.0",
+ "noteParams": {},
+ "noteForms": {},
+ "angularObjects": {},
+ "config": {
+  "isZeppelinNotebookCronEnable": false,
+  "looknfeel": "default",
+  "personalizedMode": "false"
+ },
+ "info": {},
+ "path": "/TfIdf"
+}
