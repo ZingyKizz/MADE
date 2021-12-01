@@ -101,3 +101,5 @@ target/
 # Scala
 
 .bsp/
+
+graphs/
